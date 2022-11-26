@@ -14,7 +14,7 @@ public class CountDuplicateChar {
 
     public static void main(String[] args) {
         CountDuplicateChar cd=new CountDuplicateChar();
-        System.out.println(cd.countDuplicateChar("Ezmet"));
+        System.out.println(cd.countDuplicateChar("Ezmet is Ezmet"));
     }
 
 
