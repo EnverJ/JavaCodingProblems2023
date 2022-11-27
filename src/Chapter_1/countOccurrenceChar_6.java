@@ -6,6 +6,6 @@ public class countOccurrenceChar_6 {
     }
 
     public static void main(String[] args) {
-        System.out.println(countOccurrenceChar("Java is awesome",'J'));
+            System.out.println(countOccurrenceChar("Java is awesome", 'J'));
     }
 }
