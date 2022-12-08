@@ -1,0 +1,36 @@
+package Chapter_1;
+
+import java.util.stream.Stream;
+
+public  class TransformingString_24 {
+    public static String mapTransforming() {
+        String resultMp = Stream.of("hello")
+                .map(s -> s + " world")
+                .findFirst()
+                .get();
+        return resultMp;
+    }
+    public static String goooool(){
+        String resultMap = Stream.of("gooool!   ")
+                .map(String::toUpperCase)
+                .map(s-> s.repeat(2))
+                .map(s-> s.replaceAll("O","OOO"))
+                .findFirst()
+                .get();
+        return resultMap;
+    }
+    public void goool_jdk12() {
+        String result = "hello".transform(s-> s + "world");
+
+
+        
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mapTransforming());   // output : hello world
+        System.out.println(goooool());  //GOOOOOOOOOOOOL!   GOOOOOOOOOOOOL! 
+
+    }
+    
+
+}
