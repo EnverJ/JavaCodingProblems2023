@@ -19,8 +19,12 @@ public  class TransformingString_24 {
                 .get();
         return resultMap;
     }
-    public void goool_jdk12() {
+    public static String goool_jdk12() {
         String result = "hello".transform(s-> s + "world");
+        String resultGol = "goool!".transform(s->s +"  goool!   ")
+                .replaceAll("o","oooo")
+                .toUpperCase();
+        return resultGol;
 
 
         
@@ -28,7 +32,8 @@ public  class TransformingString_24 {
 
     public static void main(String[] args) {
         System.out.println(mapTransforming());   // output : hello world
-        System.out.println(goooool());  //GOOOOOOOOOOOOL!   GOOOOOOOOOOOOL! 
+        System.out.println(goooool());  //GOOOOOOOOOOOOL!   GOOOOOOOOOOOOL!
+        System.out.println(goool_jdk12());
 
     }
     
