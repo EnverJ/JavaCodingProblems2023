@@ -21,9 +21,13 @@ public  class TransformingString_24 {
     }
     public static String goool_jdk12() {
         String result = "hello".transform(s-> s + "world");
-        String resultGol = "goool!".transform(s->s +"  goool!   ")
-                .replaceAll("o","oooo")
-                .toUpperCase();
+//        String resultGol = "goool!".transform(s->s +"  goool!   ")
+//                .replaceAll("o","oooo")
+//                .toUpperCase();
+        // or
+        String resultGol = "goool! ".transform(String :: toUpperCase)
+                .transform(s -> s.repeat(2))
+                .transform(s -> s.replaceAll("O","OOO"));
         return resultGol;
 
 
