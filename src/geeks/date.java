@@ -2,7 +2,7 @@ package geeks;
 
 import org.testng.annotations.Test;
 
-import java.sql.SQLOutput;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -73,4 +73,5 @@ public void compareDate() throws ParseException {
     System.out.println(calendar1.after(calendar2)); //true
 
 }
+
 }
