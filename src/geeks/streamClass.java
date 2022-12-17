@@ -63,6 +63,6 @@ public class streamClass {
     public void setStream() {
         List<Integer> num = Arrays.asList(2, 3, 4, 5, 6);
         num.stream().map(x -> x * x).collect(Collectors.toSet());
-        System.out.println(num);
+        System.out.println(num); //output: [2, 3, 4, 5, 6]
     }
 }
