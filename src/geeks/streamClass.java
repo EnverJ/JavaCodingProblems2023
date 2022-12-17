@@ -49,15 +49,20 @@ public class streamClass {
 
     }
 
-
     //3. reduce: The reduce method is used to reduce the elements of a stream to a single value.
     //The reduce method takes a BinaryOperator as a parameter.
     @Test
     public void reduceStream() {
-    List<Integer> number = Arrays.asList(2, 3, 4, 5);
-    int event = number.stream().filter(x -> x % 2 == 0).reduce(0, (ans, i) -> ans + i);
+        List<Integer> number = Arrays.asList(2, 3, 4, 5);
+        int event = number.stream().filter(x -> x % 2 == 0).reduce(0, (ans, i) -> ans + i);
         System.out.println(event);
+    }
 
-
-}
+    //// set
+    @Test
+    public void setStream() {
+        List<Integer> num = Arrays.asList(2, 3, 4, 5, 6);
+        num.stream().map(x -> x * x).collect(Collectors.toSet());
+        System.out.println(num);
+    }
 }
