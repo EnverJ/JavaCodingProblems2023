@@ -3,6 +3,7 @@ package geeks;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -66,6 +67,12 @@ public class streamClass {
         Stream<String> stream = Arrays.stream(arr);
         // Displaying elements in Stream
         stream.forEach(s -> System.out.print(s + " "));
+    }
+@Test
+    public void forEachPrintStream () {
+        // Creating a list of Integers
+        List<Integer> list = Arrays.asList(2, 4, 6, 8, 10);
+     list.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println); //10,8,6,4,,2
     }
 
 }
