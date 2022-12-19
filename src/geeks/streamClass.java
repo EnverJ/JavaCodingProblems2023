@@ -66,7 +66,7 @@ public class streamClass {
         // array into Stream
         Stream<String> stream = Arrays.stream(arr);
         // Displaying elements in Stream
-        stream.forEach(s -> System.out.print(s + " "));
+        stream.forEach(s -> System.out.print(s + " ")); //Java for coding
     }
 @Test
     public void forEachPrintStream () {
