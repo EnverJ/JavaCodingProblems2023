@@ -20,7 +20,9 @@ public class checkingSubRange_45 {
 
     public static void main(String[] args) {
         checkingSubRange_45 ch = new checkingSubRange_45(50);
-        int r = ch.yMinusX(1,50);
+        int r = ch.yMinusX(1,50);// output: 49
+
+      //  int r = ch.yMinusX(120,50); //Exception in thread "main" java.lang.IndexOutOfBoundsException: Range [120, 50) out of bounds for length 50
         System.out.println(r);
     }
 
