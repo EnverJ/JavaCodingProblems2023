@@ -23,5 +23,6 @@ public final class immutableClass_49 {
 
     public static void main(String[] args) {
         new immutableClass_49(6,9);
+
     }
 }
