@@ -14,8 +14,5 @@ public class FamilyArrayList {
         ls.add("two");
         ls.add("three");
         ls.stream().forEach(s -> System.out.println(s));
-
-
-
     }
 }
