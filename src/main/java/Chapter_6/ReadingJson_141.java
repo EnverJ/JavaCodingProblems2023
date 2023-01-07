@@ -1,5 +1,8 @@
 package Chapter_6;
 
+import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
+import org.testng.annotations.Test;
+
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 import java.io.IOException;
@@ -9,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 
 public class ReadingJson_141 {
@@ -29,10 +33,12 @@ public class ReadingJson_141 {
         this.lastName = lastName;
     }
 
+
     public void arrayPath() throws IOException {
         Jsonb jsonb = JsonbBuilder.create();
         Path pathArray = Paths.get("ezo_array.json");
        ReadingJson_141[] rArray= jsonb.fromJson(Files.newBufferedReader(pathArray, StandardCharsets.UTF_8), (Type) ReadingJson_141[].class);
+
     }
 
     public void rawPath() {
