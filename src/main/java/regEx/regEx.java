@@ -13,15 +13,7 @@ public class regEx {
     Pattern pattern = Pattern.compile("EZO4School", Pattern.CASE_INSENSITIVE);
     Matcher matcher = pattern.matcher("Ezo4School is oen of the best programming school");
     boolean matchFound = matcher.find();
-//    if(matchFound)
-//
-//    {
-//        System.out.println("match Found");
-//    } else
-//
-//    {
-//        System.out.println("Match not found");
         System.out.println(matchFound?match_found:match_not_found);
-}
+    }
 
 }
