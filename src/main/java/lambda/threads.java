@@ -13,6 +13,6 @@ public class threads implements Runnable {
         threads th = new threads();
      Thread thread =  new Thread(th);
      thread.start();
-        System.out.println("This code is outside eof the thread");
+        System.out.println("This code is outside of the thread");
     }
 }
