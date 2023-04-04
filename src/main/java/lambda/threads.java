@@ -18,3 +18,5 @@ public class threads implements Runnable {
         System.out.println("This code is outside of the thread");
     }
 }
+//This code is outside of the thread
+//This code is inside of the thread
