@@ -10,5 +10,6 @@ public class TestMyFun {
          fun.normalFun();
      }
 }
+
 //10
 //Hello
