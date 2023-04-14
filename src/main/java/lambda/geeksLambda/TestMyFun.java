@@ -1,6 +1,7 @@
 package lambda.geeksLambda;
 
 import org.testng.annotations.Test;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 
@@ -13,6 +14,7 @@ public class TestMyFun {
      }
     //10
 //Hello
+
 @Test
     public void listLambda () {
         // {1, 2, 3, 4}
