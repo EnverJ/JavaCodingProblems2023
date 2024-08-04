@@ -45,6 +45,7 @@ package lambda.geeksLambda;
             // Multiply two numbers using lambda expression
             System.out.println("Multiplication is " +
                     tobj.operate(6, 3, multiply));
+
             // lambda expression for single parameter
             // This expression implements 'FuncInter2' interface
             FuncInter2 fobj = message ->System.out.println("Hello "
