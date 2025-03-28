@@ -75,13 +75,65 @@ public class reverseString {
     }
 
 
+    public static int[] getNeighborsOfPeaks(int[] nums) {
+        Set<Integer> neighbors = new LinkedHashSet<>(); // Use LinkedHashSet to maintain order and remove duplicates
+
+        for (int i = 1; i < nums.length - 1; i++) {
+            if (nums[i] > nums[i - 1] && nums[i] > nums[i + 1]) { // Checking for peak
+                neighbors.add(nums[i - 1]); // Left neighbor
+                neighbors.add(nums[i + 1]); // Right neighbor
+            }
+        }
+
+        // Convert Set to int[]
+        int[] result = new int[neighbors.size()];
+        int index = 0;
+        for (int num : neighbors) {
+            result[index++] = num;
+        }
+
+        return result;
+    }
+
+    public static  void SecondSmallAndSecondLargestElement() {
+        int[] nums = {10, 20,20, 45, 34, 23, 56,56, 78, 78};
+        TreeSet<Integer> sortedSet = new TreeSet<>();
+        for(int num: nums){
+            sortedSet.add(num);
+        }
+        if(sortedSet.size()<2){
+            System.out.println("there is not enough two unique elements");
+            return;
+        }
+        Integer[] uniqueSorted = sortedSet.toArray(new Integer[0]);
+
+        int secondSmall = uniqueSorted[1];
+        int secondLargest = uniqueSorted[uniqueSorted.length - 2];
+
+        System.out.println("Second Smallest: " + secondSmall);
+        System.out.println("Second Largest: " + secondLargest);
+
+       // System.out.println("lenth of array: " + nums.length);
+        //Arrays.sort(nums);
+        //int secSmall= nums[1];
+        //int secMax= nums[nums.length-2];
+       // System.out.println(secSmall+" "+secMax);
+    }
+
+
+
     public static void main(String[] args) {
         String sum = arthStringCalculation();
         System.out.println("Sum: " + sum);
         //   revString();
         //    ForLoopReverseSt();
         // removeDuplicatedWords();
+        int[] nums = { 10, 40, 25, 3, 22, 80, 56 };
+        int[] result = getNeighborsOfPeaks(nums);
 
+        // Print the result
+        System.out.println(Arrays.toString(result));
+        SecondSmallAndSecondLargestElement();
     }
 }
 
