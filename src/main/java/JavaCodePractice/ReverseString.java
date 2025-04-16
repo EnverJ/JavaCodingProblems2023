@@ -24,6 +24,15 @@ public class ReverseString {
         }
         System.out.println("Reversed Value; " +reverseValue.toString());
 
+        //reverse string no bult in methods
+        String reverseStr= "Testing";
+        char[] chars = reverseStr.toCharArray();
+        String reversed = " ";
+        for(int i =chars.length-1; i>=0; i--){
+            reversed+= chars[i];
+        }
+
+       System.out.println(reversed);
 
 
 
